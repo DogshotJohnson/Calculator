@@ -1,0 +1,103 @@
+html,
+body,
+#wrapper {
+    height: 100%;
+    margin: 0;
+    border: 0;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#container {
+    height: 600px;
+    width: 520px;
+    outline: 2px solid black;
+    border-radius: 6px;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 120px;
+    grid-gap: 6px;
+    background-color: rgb(0, 0, 44);
+    box-shadow: 0 15px 20px rgb(54, 54, 54);
+}
+
+#container > button {
+    background-color: rgb(72, 72, 241);
+    text-align: center;
+    padding: 28px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 0;
+}
+
+#container > button:hover {
+    opacity: 60%;
+}
+
+#container > #display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: darkgrey;
+    padding: 0 8px 0 0;
+}
+
+.displaySum {
+    height: 60%;
+    margin: 0;
+    font-size: 60px;
+    align-items: center;
+}
+
+.previousInput {
+    height: 40%;
+    margin: 0;
+    font-size: 18px;
+    align-items: center;
+}
+
+#container > .numbers {
+    background-color: darkorange;
+}
+
+#container > .decimal {
+    background-color: darkorange;
+}
+
+#container > .operators {
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+#container > .clear {
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+#container > .backspace {
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+
+.equals {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    padding: 65px 0;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
